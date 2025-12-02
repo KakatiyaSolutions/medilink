@@ -3,6 +3,9 @@
  
     font-family: 'Poppins', sans-serif;
         scroll-behavior: smooth;
+        @media  (max-width:500px) {
+            
+        }
     }
 
   :root {

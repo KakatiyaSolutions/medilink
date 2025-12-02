@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medilink Consultancy Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+
+    .job-form-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .job-form-container h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #007bff;
+      border: none;
+      color: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+     </style>
+  </head>
+  <body>
+    <main>
+      <div class="top-bar d-none d-lg-block">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6"></div>
+
+            <div class="col-md-6 text-md-end topbarclr">
+              <span class="me-3">Follow Us</span>
+
+              <a href="#" class="me-2">
+                <i class="bi bi-facebook" style="color: var(--teal-main)"></i>
+              </a>
+
+              <a href="#" class="me-2">
+                <i class="bi bi-instagram" style="color: var(--teal-main)"></i>
+              </a>
+
+              <a href="#" class="me-2">
+                <i class="bi bi-twitter" style="color: var(--teal-main)"></i>
+              </a>
+
+              <a href="#" class="me-2">
+                <i class="bi bi-youtube" style="color: var(--teal-main)"></i>
+              </a>
+
+              <span class="me-3">
+                <i class="bi bi-telephone"></i> +91 9876543210
+              </span>
+
+              <span> <i class="bi bi-envelope"></i> medilinks@gmail.com </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">MEDI LINK</a> -->
+          <img
+            src="assets/logos/MEDILINK_LOGO_WEBSITE2.png"
+            alt="medilink logo"
+            class="image-fluid"
+            height="60px"
+            width="150px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrer.html">Join Free Job</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <button class="btn btn-join">JOIN US</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <p class="hero-subtitle">Best Consultancy Services</p>
+              <h1 class="hero-title mb-4">
+                Let our Experience<br />be Your Guide.
+              </h1>
+              <p class="lead mb-4">
+                Medilink offers comprehensive Doctors services globally,
+                supported by our expert team, while also providing access to
+                top-tier health plans.
+              </p>
+              <button class="btn btn-consulting">
+                Job Consulting <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500"
+                  alt="Medical Professional"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+      
+            <div class="job-form-container">
+            <h3>Join Free Job</h3>
+            <form id="joinJobForm" method="post" action="submit_job.php" enctype="multipart/form-data">
+
+                <!-- Personal Information -->
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="fullname" placeholder="Full Name *" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number *" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="date" class="form-control" name="dob" placeholder="Date of Birth">
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <select class="form-select" name="gender">
+                    <option selected disabled>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="location" placeholder="Current City / State">
+                </div>
+                </div>
+
+                <!-- Professional Information -->
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="qualification" placeholder="Highest Qualification">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="skills" placeholder="Skills / Specialization">
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="current_job" placeholder="Current Job Title">
+                </div>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" name="experience" placeholder="Years of Experience">
+                </div>
+                </div>
+
+                <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="expected_salary" placeholder="Expected Salary">
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" name="job_type">
+                    <option selected disabled>Preferred Job Type</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Freelance">Freelance</option>
+                    </select>
+                </div>
+                </div>
+
+                <!-- Document Upload -->
+                <div class="mb-3">
+                <label for="resume" class="form-label">Upload Resume (PDF/DOCX)</label>
+                <input class="form-control" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="mb-3">
+                <label for="linkedin" class="form-label">LinkedIn / Portfolio Link (optional)</label>
+                <input type="url" class="form-control" name="linkedin" placeholder="https://">
+                </div>
+
+                <!-- Terms -->
+                <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                <label class="form-check-label" for="terms">
+                    I agree to the terms and conditions *
+                </label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">Submit Application</button>
+
+            </form>
+            </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2>MEDILINK</h2>
+            <p class="small">CONSULTANCY SERVICES</p>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              <strong>Plot No. 310, Aditya Trade Centre,</strong><br />
+              <span class="ms-4">Ameerpet, Hyderabad, Telangana</span>
+            </div>
+            <div class="mb-3">
+              <i class="bi bi-telephone me-2"></i>
+              +91 70756 75629
+            </div>
+            <div>
+              <i class="bi bi-envelope me-2"></i>
+              drplacements.apollo@eud.gmail.com
+            </div>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255, 255, 255, 0.3)" />
+        <div class="row align-items-center pt-3">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <small
+              >Copyright@ Medilink Consultancy Services All Rights
+              Reserved.</small
+            >
+          </div>
+          <div class="col-md-6 text-md-end">
+            <span class="small me-2">Follow Us:</span>
+            <a href="#" class="footer-icon me-2"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="footer-icon me-2"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="footer-icon me-2"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" class="footer-icon me-2"
+              ><i class="bi bi-youtube"></i
+            ></a>
+            <a href="#" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      $("#admissionForm").on("submit", function (e) {
+        e.preventDefault();
+
+        $("#submitBtn")
+          .prop("disabled", true)
+          .html(`<span class="loader"></span> Submitting...`);
+
+        $.ajax({
+          //  url: "<?= base_url('contactsubmit'); ?>",
+          url: "contactsubmit.php",
+
+          type: "POST",
+          data: $(this).serialize(),
+          dataType: "json",
+
+          success: function (response) {
+            $("#submitBtn")
+              .prop("disabled", false)
+              .html("Submit Admission Form");
+
+            Swal.fire({
+              icon: response.status,
+              title: response.status === "success" ? "Success" : "Error",
+              text: response.message,
+            });
+
+            if (response.status === "success") {
+              $("#admissionForm")[0].reset();
+            }
+          },
+
+          error: function () {
+            $("#submitBtn")
+              .prop("disabled", false)
+              .html("Submit Admission Form");
+
+            Swal.fire({
+              icon: "error",
+              title: "Request Failed",
+              text: "Please try again later.",
+            });
+          },
+        });
+      });
+    </script>
+    <script>
+      function generateCaptcha() {
+        let chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        let captcha = "";
+        for (let i = 0; i < 6; i++) {
+          captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById("generatedCaptcha").value = captcha;
+      }
+
+      // Generate on page load
+      generateCaptcha();
+
+      // Reload captcha on icon click
+      document
+        .getElementById("reloadCaptcha")
+        .addEventListener("click", function () {
+          generateCaptcha();
+        });
+    </script>
+  </body>
+</html>
